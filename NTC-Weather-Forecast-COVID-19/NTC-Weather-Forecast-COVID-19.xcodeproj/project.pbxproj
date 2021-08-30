@@ -10,6 +10,29 @@
 		1125654726DC694B008696AD /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125654626DC694B008696AD /* SaveViewController.swift */; };
 		1125654A26DC698D008696AD /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125654926DC698D008696AD /* WeatherViewController.swift */; };
 		1125655026DC6D85008696AD /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125654F26DC6D85008696AD /* PersistentStorage.swift */; };
+		1125656226DC7FB9008696AD /* WeatherNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125656126DC7FB9008696AD /* WeatherNetWork.swift */; };
+		1125656526DC7FD1008696AD /* WeatherAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125656426DC7FD1008696AD /* WeatherAPIService.swift */; };
+		1125656B26DC7FFA008696AD /* Covid19Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125656A26DC7FFA008696AD /* Covid19Network.swift */; };
+		1125657126DC801F008696AD /* Covid19APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125657026DC801F008696AD /* Covid19APIService.swift */; };
+		1125657526DC8338008696AD /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125657426DC8338008696AD /* CurrentWeather.swift */; };
+		1125657926DC842A008696AD /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125657826DC842A008696AD /* Weather.swift */; };
+		1125657C26DC8496008696AD /* MainWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125657B26DC8496008696AD /* MainWeather.swift */; };
+		1125657F26DC84B1008696AD /* WindWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125657E26DC84B1008696AD /* WindWeather.swift */; };
+		1125658526DC8589008696AD /* ErrorNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125658426DC8589008696AD /* ErrorNetwork.swift */; };
+		1125658926DC8915008696AD /* SevenDaysWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125658826DC8915008696AD /* SevenDaysWeather.swift */; };
+		1125658C26DC8A50008696AD /* Data7DaysWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125658B26DC8A50008696AD /* Data7DaysWeather.swift */; };
+		1125659126DC8CD2008696AD /* DataDetailWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125659026DC8CD2008696AD /* DataDetailWeather.swift */; };
+		1125659526DC8CF1008696AD /* DetailWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125659426DC8CF1008696AD /* DetailWeather.swift */; };
+		1125659926DC908A008696AD /* CityWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125659826DC908A008696AD /* CityWorld.swift */; };
+		1125659D26DC90B9008696AD /* ReadDateCityFromFileCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125659C26DC90B9008696AD /* ReadDateCityFromFileCSV.swift */; };
+		112565A026DC9169008696AD /* city.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1125659F26DC9169008696AD /* city.csv */; };
+		112565A526DC926C008696AD /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112565A426DC926C008696AD /* Country.swift */; };
+		112565A926DC92B5008696AD /* CountryCovid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112565A826DC92B5008696AD /* CountryCovid.swift */; };
+		112565AE26DC92FC008696AD /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112565AD26DC92FC008696AD /* Global.swift */; };
+		112565B126DC931C008696AD /* GlobalCovid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112565B026DC931C008696AD /* GlobalCovid.swift */; };
+		112565B826DCDD13008696AD /* Key.csv in Resources */ = {isa = PBXBuildFile; fileRef = 112565B726DCDD13008696AD /* Key.csv */; };
+		112565BC26DCDE32008696AD /* ReadAPIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112565BB26DCDE32008696AD /* ReadAPIKey.swift */; };
+		112565C126DCE06B008696AD /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112565C026DCE06B008696AD /* APIKey.swift */; };
 		114D854726D8D5C400BAA29F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114D854626D8D5C400BAA29F /* AppDelegate.swift */; };
 		114D854926D8D5C400BAA29F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114D854826D8D5C400BAA29F /* SceneDelegate.swift */; };
 		114D854B26D8D5C400BAA29F /* Covid19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114D854A26D8D5C400BAA29F /* Covid19ViewController.swift */; };
@@ -17,12 +40,41 @@
 		114D855126D8D5C400BAA29F /* NTC_Weather_Forecast_COVID_19.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 114D854F26D8D5C400BAA29F /* NTC_Weather_Forecast_COVID_19.xcdatamodeld */; };
 		114D855326D8D5C700BAA29F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 114D855226D8D5C700BAA29F /* Assets.xcassets */; };
 		114D855626D8D5C700BAA29F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114D855426D8D5C700BAA29F /* LaunchScreen.storyboard */; };
+		115AF59626DDE78C007B3AF3 /* Covid19APIService+getListCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AF59526DDE78C007B3AF3 /* Covid19APIService+getListCountry.swift */; };
+		115AF59A26DDE876007B3AF3 /* Covid19APIService+getgetGlobalCovid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AF59926DDE876007B3AF3 /* Covid19APIService+getgetGlobalCovid.swift */; };
+		115AF59E26DDE967007B3AF3 /* Covid19APIService+getCountryCovid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AF59D26DDE967007B3AF3 /* Covid19APIService+getCountryCovid.swift */; };
+		115AF5A526DDF002007B3AF3 /* WeatherAPIService+getCurrentWeatherByLocate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AF5A426DDF002007B3AF3 /* WeatherAPIService+getCurrentWeatherByLocate.swift */; };
+		115AF5A926DDF039007B3AF3 /* WeatherAPIService+get7DaysWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AF5A826DDF039007B3AF3 /* WeatherAPIService+get7DaysWeather.swift */; };
+		115AF5AC26DDF0D9007B3AF3 /* WeatherAPIService+getDetailWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115AF5AB26DDF0D9007B3AF3 /* WeatherAPIService+getDetailWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1125654626DC694B008696AD /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		1125654926DC698D008696AD /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		1125654F26DC6D85008696AD /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
+		1125656126DC7FB9008696AD /* WeatherNetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherNetWork.swift; sourceTree = "<group>"; };
+		1125656426DC7FD1008696AD /* WeatherAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIService.swift; sourceTree = "<group>"; };
+		1125656A26DC7FFA008696AD /* Covid19Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19Network.swift; sourceTree = "<group>"; };
+		1125657026DC801F008696AD /* Covid19APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19APIService.swift; sourceTree = "<group>"; };
+		1125657426DC8338008696AD /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		1125657826DC842A008696AD /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		1125657B26DC8496008696AD /* MainWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWeather.swift; sourceTree = "<group>"; };
+		1125657E26DC84B1008696AD /* WindWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindWeather.swift; sourceTree = "<group>"; };
+		1125658426DC8589008696AD /* ErrorNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorNetwork.swift; sourceTree = "<group>"; };
+		1125658826DC8915008696AD /* SevenDaysWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenDaysWeather.swift; sourceTree = "<group>"; };
+		1125658B26DC8A50008696AD /* Data7DaysWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data7DaysWeather.swift; sourceTree = "<group>"; };
+		1125659026DC8CD2008696AD /* DataDetailWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDetailWeather.swift; sourceTree = "<group>"; };
+		1125659426DC8CF1008696AD /* DetailWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWeather.swift; sourceTree = "<group>"; };
+		1125659826DC908A008696AD /* CityWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWorld.swift; sourceTree = "<group>"; };
+		1125659C26DC90B9008696AD /* ReadDateCityFromFileCSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadDateCityFromFileCSV.swift; sourceTree = "<group>"; };
+		1125659F26DC9169008696AD /* city.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = city.csv; sourceTree = "<group>"; };
+		112565A426DC926C008696AD /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		112565A826DC92B5008696AD /* CountryCovid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCovid.swift; sourceTree = "<group>"; };
+		112565AD26DC92FC008696AD /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		112565B026DC931C008696AD /* GlobalCovid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalCovid.swift; sourceTree = "<group>"; };
+		112565B726DCDD13008696AD /* Key.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Key.csv; sourceTree = "<group>"; };
+		112565BB26DCDE32008696AD /* ReadAPIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadAPIKey.swift; sourceTree = "<group>"; };
+		112565C026DCE06B008696AD /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		114D854326D8D5C400BAA29F /* NTC-Weather-Forecast-COVID-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NTC-Weather-Forecast-COVID-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		114D854626D8D5C400BAA29F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		114D854826D8D5C400BAA29F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +84,12 @@
 		114D855226D8D5C700BAA29F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		114D855526D8D5C700BAA29F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		114D855726D8D5C700BAA29F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		115AF59526DDE78C007B3AF3 /* Covid19APIService+getListCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Covid19APIService+getListCountry.swift"; sourceTree = "<group>"; };
+		115AF59926DDE876007B3AF3 /* Covid19APIService+getgetGlobalCovid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Covid19APIService+getgetGlobalCovid.swift"; sourceTree = "<group>"; };
+		115AF59D26DDE967007B3AF3 /* Covid19APIService+getCountryCovid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Covid19APIService+getCountryCovid.swift"; sourceTree = "<group>"; };
+		115AF5A426DDF002007B3AF3 /* WeatherAPIService+getCurrentWeatherByLocate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherAPIService+getCurrentWeatherByLocate.swift"; sourceTree = "<group>"; };
+		115AF5A826DDF039007B3AF3 /* WeatherAPIService+get7DaysWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherAPIService+get7DaysWeather.swift"; sourceTree = "<group>"; };
+		115AF5AB26DDF0D9007B3AF3 /* WeatherAPIService+getDetailWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherAPIService+getDetailWeather.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +108,7 @@
 			children = (
 				1125654426DC6766008696AD /* Covid 19 */,
 				1125654126DC6749008696AD /* Weather Forecast */,
+				1125658426DC8589008696AD /* ErrorNetwork.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -57,9 +116,11 @@
 		1125653926DC66C3008696AD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1125654D26DC6D26008696AD /* Database */,
-				1125654326DC6757008696AD /* Covid 19 */,
+				112565BA26DCDE16008696AD /* APIKey */,
 				1125654026DC6746008696AD /* Weather Forecast */,
+				1125654326DC6757008696AD /* Covid 19 */,
+				1125654D26DC6D26008696AD /* Database */,
+				1125659726DC9076008696AD /* City World */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +178,9 @@
 		1125654026DC6746008696AD /* Weather Forecast */ = {
 			isa = PBXGroup;
 			children = (
+				1125658F26DC8B9F008696AD /* Detail Weather */,
+				1125658726DC8640008696AD /* 7 Days Weather */,
+				1125657326DC82E6008696AD /* Current Weather */,
 			);
 			path = "Weather Forecast";
 			sourceTree = "<group>";
@@ -124,6 +188,9 @@
 		1125654126DC6749008696AD /* Weather Forecast */ = {
 			isa = PBXGroup;
 			children = (
+				115AF5A326DDEFD6007B3AF3 /* WeatherAPIService+Extension */,
+				1125656126DC7FB9008696AD /* WeatherNetWork.swift */,
+				1125656426DC7FD1008696AD /* WeatherAPIService.swift */,
 			);
 			path = "Weather Forecast";
 			sourceTree = "<group>";
@@ -138,6 +205,8 @@
 		1125654326DC6757008696AD /* Covid 19 */ = {
 			isa = PBXGroup;
 			children = (
+				112565A326DC9250008696AD /* GlobalCovid */,
+				112565A226DC9240008696AD /* CountryCovid */,
 			);
 			path = "Covid 19";
 			sourceTree = "<group>";
@@ -145,6 +214,9 @@
 		1125654426DC6766008696AD /* Covid 19 */ = {
 			isa = PBXGroup;
 			children = (
+				115AF59426DDE6F2007B3AF3 /* Covid19APIService+Extension */,
+				1125656A26DC7FFA008696AD /* Covid19Network.swift */,
+				1125657026DC801F008696AD /* Covid19APIService.swift */,
 			);
 			path = "Covid 19";
 			sourceTree = "<group>";
@@ -163,6 +235,71 @@
 				1125654F26DC6D85008696AD /* PersistentStorage.swift */,
 			);
 			path = CoreDataSupportFiles;
+			sourceTree = "<group>";
+		};
+		1125657326DC82E6008696AD /* Current Weather */ = {
+			isa = PBXGroup;
+			children = (
+				1125657426DC8338008696AD /* CurrentWeather.swift */,
+				1125657826DC842A008696AD /* Weather.swift */,
+				1125657B26DC8496008696AD /* MainWeather.swift */,
+				1125657E26DC84B1008696AD /* WindWeather.swift */,
+			);
+			path = "Current Weather";
+			sourceTree = "<group>";
+		};
+		1125658726DC8640008696AD /* 7 Days Weather */ = {
+			isa = PBXGroup;
+			children = (
+				1125658826DC8915008696AD /* SevenDaysWeather.swift */,
+				1125658B26DC8A50008696AD /* Data7DaysWeather.swift */,
+			);
+			path = "7 Days Weather";
+			sourceTree = "<group>";
+		};
+		1125658F26DC8B9F008696AD /* Detail Weather */ = {
+			isa = PBXGroup;
+			children = (
+				1125659026DC8CD2008696AD /* DataDetailWeather.swift */,
+				1125659426DC8CF1008696AD /* DetailWeather.swift */,
+			);
+			path = "Detail Weather";
+			sourceTree = "<group>";
+		};
+		1125659726DC9076008696AD /* City World */ = {
+			isa = PBXGroup;
+			children = (
+				1125659826DC908A008696AD /* CityWorld.swift */,
+				1125659C26DC90B9008696AD /* ReadDateCityFromFileCSV.swift */,
+			);
+			path = "City World";
+			sourceTree = "<group>";
+		};
+		112565A226DC9240008696AD /* CountryCovid */ = {
+			isa = PBXGroup;
+			children = (
+				112565A426DC926C008696AD /* Country.swift */,
+				112565A826DC92B5008696AD /* CountryCovid.swift */,
+			);
+			path = CountryCovid;
+			sourceTree = "<group>";
+		};
+		112565A326DC9250008696AD /* GlobalCovid */ = {
+			isa = PBXGroup;
+			children = (
+				112565AD26DC92FC008696AD /* Global.swift */,
+				112565B026DC931C008696AD /* GlobalCovid.swift */,
+			);
+			path = GlobalCovid;
+			sourceTree = "<group>";
+		};
+		112565BA26DCDE16008696AD /* APIKey */ = {
+			isa = PBXGroup;
+			children = (
+				112565BB26DCDE32008696AD /* ReadAPIKey.swift */,
+				112565C026DCE06B008696AD /* APIKey.swift */,
+			);
+			path = APIKey;
 			sourceTree = "<group>";
 		};
 		114D853A26D8D5C400BAA29F = {
@@ -194,9 +331,31 @@
 				114D855226D8D5C700BAA29F /* Assets.xcassets */,
 				114D855426D8D5C700BAA29F /* LaunchScreen.storyboard */,
 				114D855726D8D5C700BAA29F /* Info.plist */,
+				1125659F26DC9169008696AD /* city.csv */,
+				112565B726DCDD13008696AD /* Key.csv */,
 				114D854F26D8D5C400BAA29F /* NTC_Weather_Forecast_COVID_19.xcdatamodeld */,
 			);
 			path = "NTC-Weather-Forecast-COVID-19";
+			sourceTree = "<group>";
+		};
+		115AF59426DDE6F2007B3AF3 /* Covid19APIService+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				115AF59526DDE78C007B3AF3 /* Covid19APIService+getListCountry.swift */,
+				115AF59926DDE876007B3AF3 /* Covid19APIService+getgetGlobalCovid.swift */,
+				115AF59D26DDE967007B3AF3 /* Covid19APIService+getCountryCovid.swift */,
+			);
+			path = "Covid19APIService+Extension";
+			sourceTree = "<group>";
+		};
+		115AF5A326DDEFD6007B3AF3 /* WeatherAPIService+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				115AF5A426DDF002007B3AF3 /* WeatherAPIService+getCurrentWeatherByLocate.swift */,
+				115AF5A826DDF039007B3AF3 /* WeatherAPIService+get7DaysWeather.swift */,
+				115AF5AB26DDF0D9007B3AF3 /* WeatherAPIService+getDetailWeather.swift */,
+			);
+			path = "WeatherAPIService+Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,9 +416,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112565B826DCDD13008696AD /* Key.csv in Resources */,
 				114D855626D8D5C700BAA29F /* LaunchScreen.storyboard in Resources */,
 				114D855326D8D5C700BAA29F /* Assets.xcassets in Resources */,
 				114D854E26D8D5C400BAA29F /* Main.storyboard in Resources */,
+				112565A026DC9169008696AD /* city.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,13 +451,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115AF59E26DDE967007B3AF3 /* Covid19APIService+getCountryCovid.swift in Sources */,
 				114D854B26D8D5C400BAA29F /* Covid19ViewController.swift in Sources */,
+				1125656226DC7FB9008696AD /* WeatherNetWork.swift in Sources */,
+				1125656B26DC7FFA008696AD /* Covid19Network.swift in Sources */,
 				114D855126D8D5C400BAA29F /* NTC_Weather_Forecast_COVID_19.xcdatamodeld in Sources */,
+				112565C126DCE06B008696AD /* APIKey.swift in Sources */,
+				112565A526DC926C008696AD /* Country.swift in Sources */,
+				1125657926DC842A008696AD /* Weather.swift in Sources */,
+				1125659526DC8CF1008696AD /* DetailWeather.swift in Sources */,
 				1125654726DC694B008696AD /* SaveViewController.swift in Sources */,
+				1125657F26DC84B1008696AD /* WindWeather.swift in Sources */,
 				114D854726D8D5C400BAA29F /* AppDelegate.swift in Sources */,
+				115AF59A26DDE876007B3AF3 /* Covid19APIService+getgetGlobalCovid.swift in Sources */,
 				114D854926D8D5C400BAA29F /* SceneDelegate.swift in Sources */,
+				1125658526DC8589008696AD /* ErrorNetwork.swift in Sources */,
+				1125656526DC7FD1008696AD /* WeatherAPIService.swift in Sources */,
+				1125658926DC8915008696AD /* SevenDaysWeather.swift in Sources */,
+				1125658C26DC8A50008696AD /* Data7DaysWeather.swift in Sources */,
+				1125657C26DC8496008696AD /* MainWeather.swift in Sources */,
 				1125654A26DC698D008696AD /* WeatherViewController.swift in Sources */,
+				112565B126DC931C008696AD /* GlobalCovid.swift in Sources */,
+				112565BC26DCDE32008696AD /* ReadAPIKey.swift in Sources */,
+				1125659D26DC90B9008696AD /* ReadDateCityFromFileCSV.swift in Sources */,
+				1125657526DC8338008696AD /* CurrentWeather.swift in Sources */,
+				115AF5AC26DDF0D9007B3AF3 /* WeatherAPIService+getDetailWeather.swift in Sources */,
+				112565AE26DC92FC008696AD /* Global.swift in Sources */,
+				1125659926DC908A008696AD /* CityWorld.swift in Sources */,
 				1125655026DC6D85008696AD /* PersistentStorage.swift in Sources */,
+				1125659126DC8CD2008696AD /* DataDetailWeather.swift in Sources */,
+				115AF5A526DDF002007B3AF3 /* WeatherAPIService+getCurrentWeatherByLocate.swift in Sources */,
+				115AF5A926DDF039007B3AF3 /* WeatherAPIService+get7DaysWeather.swift in Sources */,
+				115AF59626DDE78C007B3AF3 /* Covid19APIService+getListCountry.swift in Sources */,
+				1125657126DC801F008696AD /* Covid19APIService.swift in Sources */,
+				112565A926DC92B5008696AD /* CountryCovid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

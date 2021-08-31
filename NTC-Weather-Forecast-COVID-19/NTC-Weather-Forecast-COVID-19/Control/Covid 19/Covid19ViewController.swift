@@ -8,7 +8,7 @@
 import UIKit
 
 final class Covid19ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

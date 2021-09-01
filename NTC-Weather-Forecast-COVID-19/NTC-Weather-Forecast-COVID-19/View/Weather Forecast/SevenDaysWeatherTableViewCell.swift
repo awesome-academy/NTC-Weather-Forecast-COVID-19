@@ -7,18 +7,28 @@
 
 import UIKit
 
-final class SevenDaysWeatherTableViewCell: UITableViewCell {
+final class SevenDaysWeatherTableViewCell: UITableViewCell, ReusableView {
 
     @IBOutlet private weak var sevenDaysWeatherView: UIView!
-    @IBOutlet private weak var timeLable: UILabel!
+    @IBOutlet private weak var timeLabel: UILabel!
     @IBOutlet private weak var iconImageView: UIImageView!
-    @IBOutlet private weak var tempLable: UILabel!
+    @IBOutlet private weak var tempLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    func initDataUI(data7DaysWeather: Data7DaysWeather) {
+        sevenDaysWeatherView.layer.cornerRadius = sevenDaysWeatherView.frame.height / 3
+        let dateFormatCoordinate = DateFormatter()
+        timeLabel.text = dateFormatCoordinate.dateFormatWeather(time: data7DaysWeather.time,
+                                                                typeCurrentTime: false)
+        
+        let urlString = WeatherNetwork.shared.getIcon(icon: data7DaysWeather.weather.icon,
+                                                      typeCurrentTime: false)
+        if let url = URL(string: urlString) {
+            iconImageView.setImage(from: url)
+        }
+        tempLabel.text = String(Int(round(data7DaysWeather.temp))) + "°C"
     }
 }

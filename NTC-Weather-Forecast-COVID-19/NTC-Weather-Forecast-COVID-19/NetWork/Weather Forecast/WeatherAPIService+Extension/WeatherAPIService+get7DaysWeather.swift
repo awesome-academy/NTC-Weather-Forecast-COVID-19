@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension WeatherAPIService{
+extension WeatherAPIService {
     func get7DaysWeather(lat: Double, long: Double, completion: @escaping (Result<SevenDaysWeather, Error>) -> Void) {
         WeatherAPIService.shared.pullJSONData(url: URL(string: WeatherNetwork.shared.get7DaysWeather(lat: lat, long: long))) { (result) in
             switch result {

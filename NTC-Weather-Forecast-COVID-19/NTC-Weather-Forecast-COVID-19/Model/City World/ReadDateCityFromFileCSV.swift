@@ -36,7 +36,13 @@ struct ReadDateCity {
     }
     
     private func createLocation(line: [String]) -> CityWorld {
-        let cityWorld = CityWorld(city: line[0], lat: line[1], lon: line[2], country: line[3], countryCode: line[4], adminCity: line[5], isCurrentLocation: false)
+        let cityWorld = CityWorld(city: line[0],
+                                  lat: line[1],
+                                  long: line[2],
+                                  country: line[3],
+                                  countryCode: line[4],
+                                  adminCity: line[5],
+                                  isCurrentLocation: false)
         return cityWorld
     }
 }

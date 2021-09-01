@@ -29,4 +29,10 @@ struct WeatherNetwork {
         return "\(baseUrl)/forecast?lat=\(lat)&lon=\(long)&appid=\(APIkey.keyOpenWeatherMap)"
     }
     
+    func getIcon(icon: String, typeCurrentTime: Bool) -> String {
+        return typeCurrentTime
+            ? "http://openweathermap.org/img/wn/" + icon + ".png"
+            : "https://www.weatherbit.io/static/img/icons/" + icon + ".png"
+    }
+    
 }

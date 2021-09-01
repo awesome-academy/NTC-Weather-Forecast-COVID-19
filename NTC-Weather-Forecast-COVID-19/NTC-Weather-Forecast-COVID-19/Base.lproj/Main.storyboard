@@ -24,21 +24,6 @@
             </objects>
             <point key="canvasLocation" x="980" y="1048"/>
         </scene>
-        <!--Setting Temp View Controller-->
-        <scene sceneID="tyl-wr-tNR">
-            <objects>
-                <viewController id="yqm-vl-MjH" customClass="SettingTempViewController" customModule="NTC_Weather_Forecast_COVID_19" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dKq-XB-c1B">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Llj-dL-rYL"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6K3-9b-SFF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2545" y="1020"/>
-        </scene>
         <!--Weather View Controller-->
         <scene sceneID="xqQ-0U-BP5">
             <objects>
@@ -320,45 +305,11 @@
                         <outlet property="tempLable" destination="0VB-J6-BDZ" id="veT-vD-oCE"/>
                         <outlet property="timeLable" destination="dy3-Pi-umF" id="UxM-AV-SSK"/>
                         <outlet property="windSpeedLable" destination="530-Q7-ocD" id="jeS-a7-xuY"/>
-                        <segue destination="yqm-vl-MjH" kind="presentation" identifier="SettingTempSS" id="fuU-k3-ADe"/>
-                        <segue destination="h6g-SL-7ZL" kind="presentation" identifier="SearchCitySS" id="xVJ-J8-9ig"/>
-                        <segue destination="Bzu-Ub-qrK" kind="push" id="1p7-sq-vbw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="itR-mb-FWS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1671.0144927536232" y="1004.4642857142857"/>
-        </scene>
-        <!--Detail Weather View Controller-->
-        <scene sceneID="o1S-z6-jmO">
-            <objects>
-                <viewController storyboardIdentifier="DetailWeatherSB" id="Bzu-Ub-qrK" customClass="DetailWeatherViewController" customModule="NTC_Weather_Forecast_COVID_19" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kIm-Tz-e3v">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="9em-2h-ONh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="mgv-vm-UDT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nKM-TD-JmQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-820" y="1020"/>
-        </scene>
-        <!--Search City View Controller-->
-        <scene sceneID="SgT-D2-TO7">
-            <objects>
-                <viewController id="h6g-SL-7ZL" customClass="SearchCityViewController" customModule="NTC_Weather_Forecast_COVID_19" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wob-hx-JWs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="GEh-qf-Adt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3jW-XW-cAX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1671" y="1867"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dTB-qT-krf">

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingTempViewController: UIViewController {
+final class SettingTempViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

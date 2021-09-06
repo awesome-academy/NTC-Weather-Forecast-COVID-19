@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public extension UIImageView {
+extension UIImageView {
     func load(url: URL) {
         DispatchQueue.global().async { [weak self] in
             guard let self = self else { return }

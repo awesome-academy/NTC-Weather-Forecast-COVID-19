@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol SearchCityDelegate: AnyObject {
+    func sendCity(city: CityWorld)
+}
+
 final class SearchCityViewController: UIViewController {
 
     @IBOutlet private weak var searchCitySearchBar: UISearchBar!
@@ -17,6 +21,7 @@ final class SearchCityViewController: UIViewController {
     private var listSearchCity = [CityWorld]()
     private var isLoading = false
     private let identifierCell = "SearchCityTableViewCell"
+    weak var delegate: SearchCityDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,6 +91,7 @@ extension SearchCityViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        self.delegate?.sendCity(city: listSearchCity[indexPath.row])
         self.dismiss(animated: true, completion: nil)
     }
 }

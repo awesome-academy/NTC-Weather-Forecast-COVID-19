@@ -128,4 +128,17 @@ extension WeatherViewController: UITableViewDataSource {
         }
         return UITableViewCell()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let controller = segue.destination as? SearchCityViewController {
+            controller.delegate = self
+        }
+    }
+}
+
+extension WeatherViewController: SearchCityDelegate {
+    func sendCity(city: CityWorld) {
+        self.city = city
+        loadAPI()
+    }
 }

@@ -33,6 +33,7 @@
 		112565B826DCDD13008696AD /* Key.csv in Resources */ = {isa = PBXBuildFile; fileRef = 112565B726DCDD13008696AD /* Key.csv */; };
 		112565BC26DCDE32008696AD /* ReadAPIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112565BB26DCDE32008696AD /* ReadAPIKey.swift */; };
 		112565C126DCE06B008696AD /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112565C026DCE06B008696AD /* APIKey.swift */; };
+		114AFA0026E7071A005A983F /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114AF9FF26E7071A005A983F /* Extension+UIViewController.swift */; };
 		114D854726D8D5C400BAA29F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114D854626D8D5C400BAA29F /* AppDelegate.swift */; };
 		114D854926D8D5C400BAA29F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114D854826D8D5C400BAA29F /* SceneDelegate.swift */; };
 		114D854B26D8D5C400BAA29F /* Covid19ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114D854A26D8D5C400BAA29F /* Covid19ViewController.swift */; };
@@ -84,6 +85,7 @@
 		112565B726DCDD13008696AD /* Key.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Key.csv; sourceTree = "<group>"; };
 		112565BB26DCDE32008696AD /* ReadAPIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadAPIKey.swift; sourceTree = "<group>"; };
 		112565C026DCE06B008696AD /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		114AF9FF26E7071A005A983F /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
 		114D854326D8D5C400BAA29F /* NTC-Weather-Forecast-COVID-19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NTC-Weather-Forecast-COVID-19.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		114D854626D8D5C400BAA29F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		114D854826D8D5C400BAA29F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -389,6 +391,7 @@
 				117AA8F426E0E34700CD9DD8 /* Extension+DateFormatter.swift */,
 				117AA8F826E0EA2E00CD9DD8 /* Extension+UIAlertController.swift */,
 				117AA8FE26E4D7BD00CD9DD8 /* Extension+ReusableView.swift */,
+				114AF9FF26E7071A005A983F /* Extension+UIViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				112565C126DCE06B008696AD /* APIKey.swift in Sources */,
 				112565A526DC926C008696AD /* Country.swift in Sources */,
 				1125657926DC842A008696AD /* Weather.swift in Sources */,
+				114AFA0026E7071A005A983F /* Extension+UIViewController.swift in Sources */,
 				1125659526DC8CF1008696AD /* DetailWeather.swift in Sources */,
 				115AF5C126DF344E007B3AF3 /* DetailWeatherViewController.swift in Sources */,
 				1125654726DC694B008696AD /* SaveViewController.swift in Sources */,

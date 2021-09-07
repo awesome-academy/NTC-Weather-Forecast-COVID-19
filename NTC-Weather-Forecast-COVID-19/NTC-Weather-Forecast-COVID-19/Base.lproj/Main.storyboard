@@ -351,13 +351,88 @@
                     <view key="view" contentMode="scaleToFill" id="bNH-1b-ErD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A25-vn-d9Y">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Seach city" translatesAutoresizingMaskIntoConstraints="NO" id="edw-M2-oMk">
+                                        <rect key="frame" x="0.0" y="30" width="310.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="IPq-QW-eJL"/>
+                                        </constraints>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ske-m4-m5h">
+                                        <rect key="frame" x="0.0" y="85" width="414" height="723"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCityTableViewCell" textLabel="cs2-sO-5oQ" detailTextLabel="7Fb-s5-4yv" style="IBUITableViewCellStyleSubtitle" id="nIa-qa-jx6">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nIa-qa-jx6" id="OS7-hF-Gb7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cs2-sO-5oQ">
+                                                            <rect key="frame" x="20" y="10" width="33" height="20.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Fb-s5-4yv">
+                                                            <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8e-UC-pjt">
+                                        <rect key="frame" x="327.5" y="37" width="65" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="clickCancelButton:" destination="ahN-46-Z6O" eventType="touchUpInside" id="Hv4-QU-aJR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="M8e-UC-pjt" firstAttribute="height" secondItem="edw-M2-oMk" secondAttribute="height" multiplier="0.72" id="7ue-pz-xZH"/>
+                                    <constraint firstItem="edw-M2-oMk" firstAttribute="top" secondItem="A25-vn-d9Y" secondAttribute="top" constant="30" id="9zW-da-JXN"/>
+                                    <constraint firstItem="ske-m4-m5h" firstAttribute="top" secondItem="edw-M2-oMk" secondAttribute="bottom" constant="5" id="QFk-jk-tjD"/>
+                                    <constraint firstAttribute="trailing" secondItem="ske-m4-m5h" secondAttribute="trailing" id="hYt-c4-dXB"/>
+                                    <constraint firstItem="edw-M2-oMk" firstAttribute="leading" secondItem="A25-vn-d9Y" secondAttribute="leading" id="mGZ-3f-whT"/>
+                                    <constraint firstItem="ske-m4-m5h" firstAttribute="leading" secondItem="A25-vn-d9Y" secondAttribute="leading" id="tiO-gL-00I"/>
+                                    <constraint firstAttribute="bottom" secondItem="ske-m4-m5h" secondAttribute="bottom" id="v9U-jZ-TMG"/>
+                                    <constraint firstItem="M8e-UC-pjt" firstAttribute="centerY" secondItem="edw-M2-oMk" secondAttribute="centerY" id="xBe-fl-R83"/>
+                                    <constraint firstItem="edw-M2-oMk" firstAttribute="width" secondItem="A25-vn-d9Y" secondAttribute="width" multiplier="0.75" id="yFY-eR-VWY"/>
+                                    <constraint firstItem="M8e-UC-pjt" firstAttribute="leading" secondItem="edw-M2-oMk" secondAttribute="trailing" constant="17" id="z3E-6q-53l"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3HQ-42-AHw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A25-vn-d9Y" firstAttribute="leading" secondItem="3HQ-42-AHw" secondAttribute="leading" id="Jjd-nP-Sba"/>
+                            <constraint firstItem="A25-vn-d9Y" firstAttribute="top" secondItem="3HQ-42-AHw" secondAttribute="top" id="Mo0-Gx-3fb"/>
+                            <constraint firstItem="3HQ-42-AHw" firstAttribute="bottom" secondItem="A25-vn-d9Y" secondAttribute="bottom" id="gFb-nd-ihY"/>
+                            <constraint firstItem="3HQ-42-AHw" firstAttribute="trailing" secondItem="A25-vn-d9Y" secondAttribute="trailing" id="s3f-Vs-xaI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="listCityTableView" destination="ske-m4-m5h" id="Afk-U9-C8e"/>
+                        <outlet property="searchCitySearchBar" destination="edw-M2-oMk" id="d55-4K-tnd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xL6-HA-8MS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1641" y="1876"/>
+            <point key="canvasLocation" x="-1642.0289855072465" y="1875.6696428571427"/>
         </scene>
         <!--Detail Weather View Controller-->
         <scene sceneID="AWd-3s-4nE">

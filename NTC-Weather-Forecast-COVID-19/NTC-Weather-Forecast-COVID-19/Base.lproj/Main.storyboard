@@ -31,13 +31,28 @@
                     <view key="view" contentMode="scaleToFill" id="0uL-4O-1kG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fOp-UH-6eH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="421"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wSB-ZC-icx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fOp-UH-6eH" firstAttribute="height" secondItem="0uL-4O-1kG" secondAttribute="height" multiplier="0.5" id="5oP-qB-876"/>
+                            <constraint firstItem="fOp-UH-6eH" firstAttribute="trailing" secondItem="wSB-ZC-icx" secondAttribute="trailing" id="Z5r-0S-b93"/>
+                            <constraint firstItem="fOp-UH-6eH" firstAttribute="top" secondItem="wSB-ZC-icx" secondAttribute="top" id="gs3-6m-o51"/>
+                            <constraint firstItem="fOp-UH-6eH" firstAttribute="leading" secondItem="wSB-ZC-icx" secondAttribute="leading" id="qJ8-Nk-ys5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="settingTempTableView" destination="fOp-UH-6eH" id="hGg-v6-bfE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l2h-GE-NG2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2681" y="716"/>
+            <point key="canvasLocation" x="-2681.1594202898555" y="715.84821428571422"/>
         </scene>
         <!--Weather View Controller-->
         <scene sceneID="xqQ-0U-BP5">

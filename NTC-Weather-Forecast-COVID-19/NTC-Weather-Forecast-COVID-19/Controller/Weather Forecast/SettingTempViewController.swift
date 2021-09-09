@@ -7,11 +7,16 @@
 
 import UIKit
 
+protocol SettingTempDelegate: AnyObject {
+    func sendIndexTemp(indexTemp: Int)
+}
+
 final class SettingTempViewController: UIViewController {
     @IBOutlet private weak var settingTempTableView: UITableView!
 
     private var currentIndexTempFormat = 0
     private let keyTempFormat = UserDefaultsKeys.keyTempFomat.rawValue
+    weak var delegate: SettingTempDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +57,7 @@ extension SettingTempViewController: UITableViewDelegate, UITableViewDataSource 
             dismiss(animated: true) { [weak self] in
                 guard let self = self else { return }
                 self.updateTempFormatInUserDefaults(newValue: indexPath.row)
+                self.delegate?.sendIndexTemp(indexTemp: indexPath.row)
             }
         }
         tableView.deselectRow(at: indexPath, animated: true)

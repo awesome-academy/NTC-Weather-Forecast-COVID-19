@@ -21,6 +21,8 @@ final class WeatherViewController: UIViewController {
     private var city = CityWorld()
     private var sevenDaysWeather = SevenDaysWeather()
     private var currentWeather = CurrentWeather()
+    private let keyTempFormat = UserDefaultsKeys.keyTempFomat.rawValue
+    private var indexTemp = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +32,7 @@ final class WeatherViewController: UIViewController {
     
     private func setup() {
         sevenWeatherTableView.dataSource = self
+        indexTemp = (UserDefaults.standard.value(forKey: keyTempFormat) as? Int) ?? 0
     }
     
     private func loadAPI() {
@@ -81,7 +84,7 @@ final class WeatherViewController: UIViewController {
                 iconImageView.setImage(from: url)
             }
             descriptionLabel.text = currentWeather.weather.first?.description.uppercased()
-            tempLabel.text = String(Int(round(currentWeather.main.temp - 273))) + "°C"
+            tempLabel.formatTemperature(temp: currentWeather.main.temp - 273, indexTemp: indexTemp)
             humidityLabel.text = String(currentWeather.main.humidity) + "%"
             windSpeedLabel.text = String(currentWeather.wind.speed) + " m/s"
 
@@ -121,16 +124,18 @@ extension WeatherViewController: UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(
             withIdentifier: SevenDaysWeatherTableViewCell.reuseIdentifier)
             as? SevenDaysWeatherTableViewCell {
-            cell.initDataUI(data7DaysWeather: sevenDaysWeather.data[indexPath.row])
+            cell.configView(data7DaysWeather: sevenDaysWeather.data[indexPath.row], indexTemp: indexTemp)
             return cell
-        } else {
-            print("DequeueReusableCell failed while casting")
-        }
+        } 
         return UITableViewCell()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let controller = segue.destination as? SearchCityViewController {
+            controller.delegate = self
+        }
+        
+        if let controller = segue.destination as? SettingTempViewController {
             controller.delegate = self
         }
     }
@@ -140,5 +145,14 @@ extension WeatherViewController: SearchCityDelegate {
     func sendCity(city: CityWorld) {
         self.city = city
         loadAPI()
+    }
+}
+
+extension WeatherViewController: SettingTempDelegate {
+    
+    func sendIndexTemp(indexTemp: Int) {
+        self.indexTemp = indexTemp
+        loadData()
+        sevenWeatherTableView.reloadData()
     }
 }

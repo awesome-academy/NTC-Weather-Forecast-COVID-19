@@ -59,6 +59,7 @@
 		117AA8FF26E4D7BD00CD9DD8 /* Extension+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117AA8FE26E4D7BD00CD9DD8 /* Extension+ReusableView.swift */; };
 		11B1B89826E8A02200B5B314 /* SettingTempTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1B89626E8A02200B5B314 /* SettingTempTableViewCell.swift */; };
 		11B1B89926E8A02200B5B314 /* SettingTempTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B1B89726E8A02200B5B314 /* SettingTempTableViewCell.xib */; };
+		11B1B8D626E99C8C00B5B314 /* Extension+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1B8D526E99C8C00B5B314 /* Extension+UILabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		117AA8FE26E4D7BD00CD9DD8 /* Extension+ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ReusableView.swift"; sourceTree = "<group>"; };
 		11B1B89626E8A02200B5B314 /* SettingTempTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTempTableViewCell.swift; sourceTree = "<group>"; };
 		11B1B89726E8A02200B5B314 /* SettingTempTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTempTableViewCell.xib; sourceTree = "<group>"; };
+		11B1B8D526E99C8C00B5B314 /* Extension+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UILabel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -400,6 +402,7 @@
 				117AA8F826E0EA2E00CD9DD8 /* Extension+UIAlertController.swift */,
 				117AA8FE26E4D7BD00CD9DD8 /* Extension+ReusableView.swift */,
 				114AF9FF26E7071A005A983F /* Extension+UIViewController.swift */,
+				11B1B8D526E99C8C00B5B314 /* Extension+UILabel.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				115AF5B826DF291E007B3AF3 /* Extension+UiImageView.swift in Sources */,
 				1125657C26DC8496008696AD /* MainWeather.swift in Sources */,
 				115AF5B226DF1B73007B3AF3 /* SevenDaysWeatherTableViewCell.swift in Sources */,
+				11B1B8D626E99C8C00B5B314 /* Extension+UILabel.swift in Sources */,
 				114AFA3C26E74E7D005A983F /* SettingTemp.swift in Sources */,
 				1125654A26DC698D008696AD /* WeatherViewController.swift in Sources */,
 				112565B126DC931C008696AD /* GlobalCovid.swift in Sources */,

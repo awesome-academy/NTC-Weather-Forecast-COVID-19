@@ -108,6 +108,7 @@ final class WeatherViewController: UIViewController {
     private func clickSeeDetailButton(_ sender: UIButton) {
         if let detailWeatherScreen = storyboard?.instantiateViewController(identifier: "DetailWeatherViewController")
             as? DetailWeatherViewController {
+            detailWeatherScreen.cityWorld = self.city
             navigationController?.pushViewController(detailWeatherScreen, animated: true)
         } else {
             print("Error click See Detail")

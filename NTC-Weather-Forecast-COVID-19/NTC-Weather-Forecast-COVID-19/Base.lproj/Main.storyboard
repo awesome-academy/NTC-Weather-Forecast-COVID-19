@@ -456,10 +456,26 @@
                     <view key="view" contentMode="scaleToFill" id="fTJ-vi-Ntt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="135" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="myM-M2-ekO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="NJc-g7-QLO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NJc-g7-QLO" firstAttribute="bottom" secondItem="myM-M2-ekO" secondAttribute="bottom" id="E1z-bU-5sE"/>
+                            <constraint firstItem="myM-M2-ekO" firstAttribute="top" secondItem="NJc-g7-QLO" secondAttribute="top" id="IzQ-jx-VnP"/>
+                            <constraint firstItem="myM-M2-ekO" firstAttribute="leading" secondItem="NJc-g7-QLO" secondAttribute="leading" id="ao4-Eq-cyC"/>
+                            <constraint firstItem="NJc-g7-QLO" firstAttribute="trailing" secondItem="myM-M2-ekO" secondAttribute="trailing" id="xdN-lM-yiY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3HN-k2-D1t"/>
+                    <connections>
+                        <outlet property="detailWeatherNavigationItem" destination="3HN-k2-D1t" id="EgD-Yd-PRh"/>
+                        <outlet property="detailWeatherTableView" destination="myM-M2-ekO" id="KJ9-OO-7vf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SES-V9-a0d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,5 +8,5 @@
 import Foundation
 
 struct DetailWeather: Decodable {
-    var list: [DataDetailWeather]
+    var list: [DataDetailWeather] = []
 }

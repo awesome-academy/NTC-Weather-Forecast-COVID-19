@@ -16,10 +16,10 @@ final class SevenDaysWeatherTableViewCell: UITableViewCell, ReusableView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        sevenDaysWeatherView.layer.cornerRadius = sevenDaysWeatherView.frame.height / 3
     }
 
-    func initDataUI(data7DaysWeather: Data7DaysWeather) {
-        sevenDaysWeatherView.layer.cornerRadius = sevenDaysWeatherView.frame.height / 3
+    func configView(data7DaysWeather: Data7DaysWeather, indexTemp: Int) {
         let dateFormatCoordinate = DateFormatter()
         timeLabel.text = dateFormatCoordinate.dateFormatWeather(time: data7DaysWeather.time,
                                                                 typeCurrentTime: false)
@@ -29,6 +29,7 @@ final class SevenDaysWeatherTableViewCell: UITableViewCell, ReusableView {
         if let url = URL(string: urlString) {
             iconImageView.setImage(from: url)
         }
-        tempLabel.text = String(Int(round(data7DaysWeather.temp))) + "°C"
+        
+        tempLabel.formatTemperature(temp: data7DaysWeather.temp, indexTemp: indexTemp)
     }
 }

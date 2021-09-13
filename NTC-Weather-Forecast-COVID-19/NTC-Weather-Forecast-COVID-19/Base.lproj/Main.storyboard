@@ -15,14 +15,47 @@
                     <view key="view" contentMode="scaleToFill" id="S4k-Wt-8zj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="135" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X9G-Rg-Q5l">
+                                <rect key="frame" x="0.0" y="153" width="414" height="660"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Q8i-h1-NAP">
+                                <rect key="frame" x="50" y="103" width="314" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="w1o-Xv-6Ox"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="30 minute"/>
+                                    <segment title="1 hour"/>
+                                    <segment title="1 day"/>
+                                </segments>
+                                <connections>
+                                    <action selector="clickNotificationSegmentedControl:" destination="dvQ-zD-2EG" eventType="valueChanged" id="9rq-Au-XrD"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PoY-P8-gW0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PoY-P8-gW0" firstAttribute="bottom" secondItem="X9G-Rg-Q5l" secondAttribute="bottom" id="147-R3-12i"/>
+                            <constraint firstItem="Q8i-h1-NAP" firstAttribute="leading" secondItem="PoY-P8-gW0" secondAttribute="leading" constant="50" id="Lcr-Un-AJc"/>
+                            <constraint firstItem="PoY-P8-gW0" firstAttribute="trailing" secondItem="Q8i-h1-NAP" secondAttribute="trailing" constant="50" id="OkB-ya-4Ej"/>
+                            <constraint firstItem="Q8i-h1-NAP" firstAttribute="top" secondItem="PoY-P8-gW0" secondAttribute="top" constant="15" id="RFC-ml-joa"/>
+                            <constraint firstItem="X9G-Rg-Q5l" firstAttribute="leading" secondItem="PoY-P8-gW0" secondAttribute="leading" id="Yrv-BI-UOH"/>
+                            <constraint firstItem="X9G-Rg-Q5l" firstAttribute="top" secondItem="Q8i-h1-NAP" secondAttribute="bottom" constant="15" id="fE9-MJ-jg2"/>
+                            <constraint firstItem="PoY-P8-gW0" firstAttribute="trailing" secondItem="X9G-Rg-Q5l" secondAttribute="trailing" id="kH0-ec-ESA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8m7-rW-QBW"/>
+                    <connections>
+                        <outlet property="notificationSegmentControl" destination="Q8i-h1-NAP" id="A1o-eH-4Pl"/>
+                        <outlet property="saveWeatherTableView" destination="X9G-Rg-Q5l" id="JE9-9h-9Wb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLM-nD-0s7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="980" y="1048"/>
+            <point key="canvasLocation" x="979.71014492753636" y="1047.9910714285713"/>
         </scene>
         <!--Setting Temp View Controller-->
         <scene sceneID="JaO-oB-LX3">

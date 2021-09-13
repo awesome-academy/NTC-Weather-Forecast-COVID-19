@@ -57,6 +57,8 @@
 		117AA8F926E0EA2E00CD9DD8 /* Extension+UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117AA8F826E0EA2E00CD9DD8 /* Extension+UIAlertController.swift */; };
 		117AA8FC26E4D70200CD9DD8 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117AA8FB26E4D70200CD9DD8 /* ReusableView.swift */; };
 		117AA8FF26E4D7BD00CD9DD8 /* Extension+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117AA8FE26E4D7BD00CD9DD8 /* Extension+ReusableView.swift */; };
+		1191AE3A26EF264D001AD855 /* SaveWeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1191AE3826EF264D001AD855 /* SaveWeatherTableViewCell.swift */; };
+		1191AE3B26EF264D001AD855 /* SaveWeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1191AE3926EF264D001AD855 /* SaveWeatherTableViewCell.xib */; };
 		11B1B89826E8A02200B5B314 /* SettingTempTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1B89626E8A02200B5B314 /* SettingTempTableViewCell.swift */; };
 		11B1B89926E8A02200B5B314 /* SettingTempTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B1B89726E8A02200B5B314 /* SettingTempTableViewCell.xib */; };
 		11B1B8D626E99C8C00B5B314 /* Extension+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1B8D526E99C8C00B5B314 /* Extension+UILabel.swift */; };
@@ -122,6 +124,8 @@
 		117AA8F826E0EA2E00CD9DD8 /* Extension+UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIAlertController.swift"; sourceTree = "<group>"; };
 		117AA8FB26E4D70200CD9DD8 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		117AA8FE26E4D7BD00CD9DD8 /* Extension+ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ReusableView.swift"; sourceTree = "<group>"; };
+		1191AE3826EF264D001AD855 /* SaveWeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveWeatherTableViewCell.swift; sourceTree = "<group>"; };
+		1191AE3926EF264D001AD855 /* SaveWeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveWeatherTableViewCell.xib; sourceTree = "<group>"; };
 		11B1B89626E8A02200B5B314 /* SettingTempTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTempTableViewCell.swift; sourceTree = "<group>"; };
 		11B1B89726E8A02200B5B314 /* SettingTempTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTempTableViewCell.xib; sourceTree = "<group>"; };
 		11B1B8D526E99C8C00B5B314 /* Extension+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UILabel.swift"; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 		1125653A26DC66CE008696AD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1191AE3726EF2609001AD855 /* Save */,
 				1125654226DC6750008696AD /* Covid19 */,
 				1125653F26DC6736008696AD /* Weather Forecast */,
 			);
@@ -427,6 +432,15 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		1191AE3726EF2609001AD855 /* Save */ = {
+			isa = PBXGroup;
+			children = (
+				1191AE3826EF264D001AD855 /* SaveWeatherTableViewCell.swift */,
+				1191AE3926EF264D001AD855 /* SaveWeatherTableViewCell.xib */,
+			);
+			path = Save;
+			sourceTree = "<group>";
+		};
 		11B1B88F26E8571900B5B314 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -518,6 +532,7 @@
 				114D854E26D8D5C400BAA29F /* Main.storyboard in Resources */,
 				112565A026DC9169008696AD /* city.csv in Resources */,
 				11B1B8DD26E9A80100B5B314 /* DetailWeatherTableViewCell.xib in Resources */,
+				1191AE3B26EF264D001AD855 /* SaveWeatherTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +582,7 @@
 				114D854926D8D5C400BAA29F /* SceneDelegate.swift in Sources */,
 				1125658526DC8589008696AD /* ErrorNetwork.swift in Sources */,
 				1125656526DC7FD1008696AD /* WeatherAPIService.swift in Sources */,
+				1191AE3A26EF264D001AD855 /* SaveWeatherTableViewCell.swift in Sources */,
 				1125658926DC8915008696AD /* SevenDaysWeather.swift in Sources */,
 				1125658C26DC8A50008696AD /* Data7DaysWeather.swift in Sources */,
 				115AF5B826DF291E007B3AF3 /* Extension+UiImageView.swift in Sources */,

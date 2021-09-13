@@ -26,4 +26,17 @@ struct DataDetailWeather: Decodable {
         case wind
         case time = "dt"
     }
+    
+    func convertToWeatherEntity(city: String) -> WeatherEntity {
+        let weatherEntity = WeatherEntity()
+        weatherEntity.id = "\(city) + \(self.time)"
+        weatherEntity.city = city
+        weatherEntity.humidity = self.main.humidity
+        weatherEntity.icon = self.weather.first?.icon ?? ""
+        weatherEntity.des = self.weather.first?.description ?? ""
+        weatherEntity.speedWind = self.wind.speed
+        weatherEntity.temp = self.main.temp
+        weatherEntity.time = Double(self.time)
+        return weatherEntity
+    }
 }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 final class DetailWeatherViewController: UIViewController {
 
@@ -59,7 +60,13 @@ extension DetailWeatherViewController: UITableViewDelegate, UITableViewDataSourc
         if let cell = tableView.dequeueReusableCell(
             withIdentifier: DetailWeatherTableViewCell.reuseIdentifier)
             as? DetailWeatherTableViewCell {
-            cell.configView(dataDetailWeather: detailWeather.list[indexPath.row], indexTemp: indexTemp)
+            cell.delegate = self
+            let weather = detailWeather.list[indexPath.row].convertToWeatherEntity(city: cityWorld.city)
+            let isMark = WeatherManager.shared.isWeatherEntity(weather: weather)
+            cell.configView(weather: detailWeather.list[indexPath.row],
+                            indexTemp: indexTemp,
+                            isMark: isMark,
+                            index: indexPath.row)
             return cell
         }
         return UITableViewCell()
@@ -74,5 +81,14 @@ extension DetailWeatherViewController: UITableViewDelegate, UITableViewDataSourc
                     cell.layer.transform = CATransform3DMakeScale(1, 1, 1)
                 })
         })
+    }
+}
+
+extension DetailWeatherViewController: DetailWeatherDelegate {
+    func sendCheckMark(isMark: Bool, index: Int) {
+        let weather = detailWeather.list[index].convertToWeatherEntity(city: cityWorld.city)
+        isMark ?
+            WeatherManager.shared.createWeatherEntity(weather: weather) :
+            WeatherManager.shared.deleteWeatherEntity(weather: weather)
     }
 }

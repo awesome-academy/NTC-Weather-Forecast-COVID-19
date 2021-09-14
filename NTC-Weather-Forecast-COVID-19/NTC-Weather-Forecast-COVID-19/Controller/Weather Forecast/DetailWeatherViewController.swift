@@ -19,14 +19,13 @@ final class DetailWeatherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
-    }
-    
-    private func setup() {
         detailWeatherTableView.dataSource = self
         detailWeatherTableView.delegate = self
         detailWeatherTableView.register(DetailWeatherTableViewCell.nib,
                                         forCellReuseIdentifier: DetailWeatherTableViewCell.reuseIdentifier)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         indexTemp = (UserDefaults.standard.value(forKey: keyTempFormat) as? Int) ?? 0
         detailWeatherNavigationItem.title = cityWorld.city
         loadAPI()

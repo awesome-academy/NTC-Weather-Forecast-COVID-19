@@ -59,6 +59,7 @@
 		117AA8FF26E4D7BD00CD9DD8 /* Extension+ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117AA8FE26E4D7BD00CD9DD8 /* Extension+ReusableView.swift */; };
 		1191AE3A26EF264D001AD855 /* SaveWeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1191AE3826EF264D001AD855 /* SaveWeatherTableViewCell.swift */; };
 		1191AE3B26EF264D001AD855 /* SaveWeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1191AE3926EF264D001AD855 /* SaveWeatherTableViewCell.xib */; };
+		1191AE3F26EF45A4001AD855 /* NotificationLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1191AE3E26EF45A4001AD855 /* NotificationLocal.swift */; };
 		11B1B89826E8A02200B5B314 /* SettingTempTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1B89626E8A02200B5B314 /* SettingTempTableViewCell.swift */; };
 		11B1B89926E8A02200B5B314 /* SettingTempTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B1B89726E8A02200B5B314 /* SettingTempTableViewCell.xib */; };
 		11B1B8D626E99C8C00B5B314 /* Extension+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1B8D526E99C8C00B5B314 /* Extension+UILabel.swift */; };
@@ -126,6 +127,7 @@
 		117AA8FE26E4D7BD00CD9DD8 /* Extension+ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ReusableView.swift"; sourceTree = "<group>"; };
 		1191AE3826EF264D001AD855 /* SaveWeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveWeatherTableViewCell.swift; sourceTree = "<group>"; };
 		1191AE3926EF264D001AD855 /* SaveWeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveWeatherTableViewCell.xib; sourceTree = "<group>"; };
+		1191AE3E26EF45A4001AD855 /* NotificationLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLocal.swift; sourceTree = "<group>"; };
 		11B1B89626E8A02200B5B314 /* SettingTempTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTempTableViewCell.swift; sourceTree = "<group>"; };
 		11B1B89726E8A02200B5B314 /* SettingTempTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTempTableViewCell.xib; sourceTree = "<group>"; };
 		11B1B8D526E99C8C00B5B314 /* Extension+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UILabel.swift"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		1125653926DC66C3008696AD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1191AE3D26EF4592001AD855 /* Save */,
 				112565BA26DCDE16008696AD /* APIKey */,
 				1125654026DC6746008696AD /* Weather Forecast */,
 				1125654326DC6757008696AD /* Covid 19 */,
@@ -441,6 +444,14 @@
 			path = Save;
 			sourceTree = "<group>";
 		};
+		1191AE3D26EF4592001AD855 /* Save */ = {
+			isa = PBXGroup;
+			children = (
+				1191AE3E26EF45A4001AD855 /* NotificationLocal.swift */,
+			);
+			path = Save;
+			sourceTree = "<group>";
+		};
 		11B1B88F26E8571900B5B314 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -595,6 +606,7 @@
 				112565B126DC931C008696AD /* GlobalCovid.swift in Sources */,
 				117AA8FF26E4D7BD00CD9DD8 /* Extension+ReusableView.swift in Sources */,
 				112565BC26DCDE32008696AD /* ReadAPIKey.swift in Sources */,
+				1191AE3F26EF45A4001AD855 /* NotificationLocal.swift in Sources */,
 				11B1B90526E9F67800B5B314 /* WeatherRepository.swift in Sources */,
 				1125659D26DC90B9008696AD /* ReadDateCityFromFileCSV.swift in Sources */,
 				11B1B8FE26E9F28E00B5B314 /* WeatherEntity.swift in Sources */,

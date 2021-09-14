@@ -41,8 +41,9 @@ struct WeatherRepository: WeatherRepositoryType {
         weathers = result?.compactMap({
             $0.convertToWeatherEntity()
         }) ?? [WeatherEntity]()
-
-        return weathers
+        
+        let weathersNotExpired = weathers.filter { checkExpired(weather: $0) == true }
+        return weathersNotExpired
     }
     
     func isWeatherEntity(weather: WeatherEntity) -> Bool {
@@ -77,5 +78,10 @@ struct WeatherRepository: WeatherRepositoryType {
             }
         }
         PersistentStorage.shared.saveContext()
+    }
+    
+    func checkExpired(weather: WeatherEntity) -> Bool {
+        let currentTime = Int(Date().timeIntervalSince1970)
+        return Int(weather.time) >= currentTime
     }
 }

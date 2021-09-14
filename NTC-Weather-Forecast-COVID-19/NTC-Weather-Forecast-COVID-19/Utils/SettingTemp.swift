@@ -14,4 +14,5 @@ enum TempFormat: String, CaseIterable {
 
 enum UserDefaultsKeys: String {
     case keyTempFomat = "TEMP_FORMAT_KEY"
+    case keyNotification = "NOTIFICATION_KEY"
 }

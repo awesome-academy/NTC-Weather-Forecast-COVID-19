@@ -11,6 +11,12 @@ struct Country: Codable {
     let name: String
     let slug: String
     let ios: String
+    
+    init() {
+        name = ""
+        slug = ""
+        ios = ""
+    }
 
     init(name: String, slug: String, ios: String) {
         self.name = name

@@ -75,6 +75,8 @@
 		11B1B90B26E9FD8100B5B314 /* DataDetailWeatherCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1B90926E9FD8100B5B314 /* DataDetailWeatherCD+CoreDataProperties.swift */; };
 		11B2A9AB26F1814000E14BA6 /* SearchCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2A9AA26F1814000E14BA6 /* SearchCountryViewController.swift */; };
 		11B2A9AE26F1820500E14BA6 /* DetailCountryCovidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2A9AD26F1820500E14BA6 /* DetailCountryCovidViewController.swift */; };
+		11B2A9B326F1A61200E14BA6 /* SearchCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2A9B126F1A61200E14BA6 /* SearchCountryTableViewCell.swift */; };
+		11B2A9B426F1A61200E14BA6 /* SearchCountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B2A9B226F1A61200E14BA6 /* SearchCountryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,6 +150,8 @@
 		11B1B90926E9FD8100B5B314 /* DataDetailWeatherCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataDetailWeatherCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		11B2A9AA26F1814000E14BA6 /* SearchCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCountryViewController.swift; sourceTree = "<group>"; };
 		11B2A9AD26F1820500E14BA6 /* DetailCountryCovidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCountryCovidViewController.swift; sourceTree = "<group>"; };
+		11B2A9B126F1A61200E14BA6 /* SearchCountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCountryTableViewCell.swift; sourceTree = "<group>"; };
+		11B2A9B226F1A61200E14BA6 /* SearchCountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCountryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +272,7 @@
 		1125654226DC6750008696AD /* Covid19 */ = {
 			isa = PBXGroup;
 			children = (
+				11B2A9B026F1A5FC00E14BA6 /* SearchCountry */,
 			);
 			path = Covid19;
 			sourceTree = "<group>";
@@ -493,6 +498,15 @@
 			path = DetailWeather;
 			sourceTree = "<group>";
 		};
+		11B2A9B026F1A5FC00E14BA6 /* SearchCountry */ = {
+			isa = PBXGroup;
+			children = (
+				11B2A9B126F1A61200E14BA6 /* SearchCountryTableViewCell.swift */,
+				11B2A9B226F1A61200E14BA6 /* SearchCountryTableViewCell.xib */,
+			);
+			path = SearchCountry;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -551,6 +565,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B2A9B426F1A61200E14BA6 /* SearchCountryTableViewCell.xib in Resources */,
 				112565B826DCDD13008696AD /* Key.csv in Resources */,
 				114D855626D8D5C700BAA29F /* LaunchScreen.storyboard in Resources */,
 				11B1B89926E8A02200B5B314 /* SettingTempTableViewCell.xib in Resources */,
@@ -598,6 +613,7 @@
 				114D855126D8D5C400BAA29F /* NTC_Weather_Forecast_COVID_19.xcdatamodeld in Sources */,
 				112565C126DCE06B008696AD /* APIKey.swift in Sources */,
 				112565A526DC926C008696AD /* Country.swift in Sources */,
+				11B2A9B326F1A61200E14BA6 /* SearchCountryTableViewCell.swift in Sources */,
 				1125657926DC842A008696AD /* Weather.swift in Sources */,
 				11B2A9AB26F1814000E14BA6 /* SearchCountryViewController.swift in Sources */,
 				114AFA0026E7071A005A983F /* Extension+UIViewController.swift in Sources */,

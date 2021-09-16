@@ -16,10 +16,8 @@ final class SearchCityViewController: UIViewController {
     @IBOutlet private weak var searchCitySearchBar: UISearchBar!
     @IBOutlet private weak var listCityTableView: UITableView!
     
-    private let refreshControl = UIRefreshControl()
     private var locations: [CityWorld] = []
     private var listSearchCity = [CityWorld]()
-    private var isLoading = false
     private let identifierCell = "SearchCityTableViewCell"
     weak var delegate: SearchCityDelegate?
     
@@ -40,22 +38,6 @@ final class SearchCityViewController: UIViewController {
         listCityTableView.delegate = self
         locations = ReadDateCity.shared.loadLocationFromCSV()
         listSearchCity = locations
-        refreshControl.attributedTitle = NSAttributedString()
-        refreshControl.addTarget(self,
-                                 action: #selector(refresh(_:)),
-                                 for: .valueChanged)
-        listCityTableView.addSubview(refreshControl)
-    }
-    
-    @objc private func refresh(_ sender: AnyObject) {
-        guard let name = searchCitySearchBar.searchTextField.text else {
-            return
-        }
-        if !isLoading {
-            isLoading = true
-            searchName(nameCity: name)
-            refreshControl.endRefreshing()
-        }
     }
     
     private func searchName(nameCity: String) {
@@ -109,9 +91,6 @@ extension SearchCityViewController: UISearchBarDelegate {
         guard let name = searchBar.searchTextField.text else {
             return
         }
-        if !isLoading {
-            isLoading = true
-            searchName(nameCity: name)
-        }
+        searchName(nameCity: name)
     }
 }

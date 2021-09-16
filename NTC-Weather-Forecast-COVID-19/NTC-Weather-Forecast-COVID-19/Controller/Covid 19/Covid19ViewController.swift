@@ -94,4 +94,18 @@ final class Covid19ViewController: UIViewController {
             print("Error click See Detail")
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let controller = segue.destination as? SearchCountryViewController {
+            controller.delegate = self
+        }
+    }
+}
+
+extension Covid19ViewController: SearchCountryDelegate {
+    func sendCountry(country: Country) {
+        self.country = country
+        nameCountryTextField.text = country.name
+        loadAPI()
+    }
 }

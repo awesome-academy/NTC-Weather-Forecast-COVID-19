@@ -88,7 +88,9 @@ final class Covid19ViewController: UIViewController {
     @IBAction
     private func clickSeeDetailButton(_ sender: UIButton) {
         if let detailCountryCovidScreen = storyboard?.instantiateViewController(identifier: "DetailCountryCovidViewController")
-            as? DetailCountryCovidViewController {
+            as? DetailCovidViewController {
+            detailCountryCovidScreen.countryCovids = countryCovids
+            detailCountryCovidScreen.country = country
             navigationController?.pushViewController(detailCountryCovidScreen, animated: true)
         } else {
             print("Error click See Detail")

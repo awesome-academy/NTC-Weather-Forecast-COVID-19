@@ -853,21 +853,59 @@
             </objects>
             <point key="canvasLocation" x="66.666666666666671" y="1047.9910714285713"/>
         </scene>
-        <!--Detail Country Covid View Controller-->
+        <!--Detail Covid View Controller-->
         <scene sceneID="1bw-vq-ni1">
             <objects>
-                <viewController storyboardIdentifier="DetailCountryCovidViewController" id="kGf-as-Qm4" customClass="DetailCountryCovidViewController" customModule="NTC_Weather_Forecast_COVID_19" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailCountryCovidViewController" id="kGf-as-Qm4" customClass="DetailCovidViewController" customModule="NTC_Weather_Forecast_COVID_19" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bxZ-j6-pNu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="144" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ceg-b7-yNt">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="T1Z-PT-bCk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ceg-b7-yNt" firstAttribute="top" secondItem="T1Z-PT-bCk" secondAttribute="top" id="2A6-jK-KV0"/>
+                            <constraint firstItem="T1Z-PT-bCk" firstAttribute="bottom" secondItem="Ceg-b7-yNt" secondAttribute="bottom" id="RYT-0r-7TN"/>
+                            <constraint firstItem="Ceg-b7-yNt" firstAttribute="leading" secondItem="T1Z-PT-bCk" secondAttribute="leading" id="WJ3-T4-YZn"/>
+                            <constraint firstItem="T1Z-PT-bCk" firstAttribute="trailing" secondItem="Ceg-b7-yNt" secondAttribute="trailing" id="p0C-2k-me7"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="NTQ-ql-xtu"/>
+                    <navigationItem key="navigationItem" id="NTQ-ql-xtu">
+                        <barButtonItem key="rightBarButtonItem" image="slider.vertical.3" catalog="system" style="plain" id="AIV-qt-0ut">
+                            <connections>
+                                <action selector="actionFitlerDetailCountryCovid:" destination="kGf-as-Qm4" id="ehm-yX-BwV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="detailCountryCovidNavigationItem" destination="NTQ-ql-xtu" id="StP-3R-zuV"/>
+                        <outlet property="detailCountryCovidTableView" destination="Ceg-b7-yNt" id="NzJ-Ko-nIB"/>
+                        <segue destination="Brb-HK-QdR" kind="presentation" identifier="ChooseDateViewController" id="hvf-Nu-Vxt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fyh-f1-ahM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="67" y="1764"/>
+        </scene>
+        <!--Choose Date View Controller-->
+        <scene sceneID="qoR-ax-J4u">
+            <objects>
+                <viewController id="Brb-HK-QdR" customClass="ChooseDateViewController" customModule="NTC_Weather_Forecast_COVID_19" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bFf-nU-I8C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="O7f-cY-bOm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AbK-Ex-UhW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1033" y="1767"/>
         </scene>
         <!--Search Country View Controller-->
         <scene sceneID="kbw-Te-0AH">
@@ -988,6 +1026,7 @@
         <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
         <image name="logocovid" width="626" height="417"/>
         <image name="safe" width="16" height="16"/>
+        <image name="slider.vertical.3" catalog="system" width="128" height="111"/>
         <image name="smoke.fill" catalog="system" width="128" height="90"/>
         <image name="thermometer.sun" catalog="system" width="114" height="128"/>
         <image name="wind.snow" catalog="system" width="128" height="110"/>

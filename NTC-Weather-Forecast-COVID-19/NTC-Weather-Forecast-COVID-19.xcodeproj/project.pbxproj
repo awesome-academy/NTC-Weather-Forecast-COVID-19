@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110AED0626F2F61400271ACD /* DetailCovidTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110AED0426F2F61400271ACD /* DetailCovidTableViewCell.swift */; };
+		110AED0726F2F61400271ACD /* DetailCovidTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110AED0526F2F61400271ACD /* DetailCovidTableViewCell.xib */; };
+		110AED0B26F2FC6600271ACD /* ChooseDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110AED0A26F2FC6600271ACD /* ChooseDateViewController.swift */; };
 		1125654726DC694B008696AD /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125654626DC694B008696AD /* SaveViewController.swift */; };
 		1125654A26DC698D008696AD /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125654926DC698D008696AD /* WeatherViewController.swift */; };
 		1125655026DC6D85008696AD /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1125654F26DC6D85008696AD /* PersistentStorage.swift */; };
@@ -74,12 +77,15 @@
 		11B1B90A26E9FD8100B5B314 /* DataDetailWeatherCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1B90826E9FD8100B5B314 /* DataDetailWeatherCD+CoreDataClass.swift */; };
 		11B1B90B26E9FD8100B5B314 /* DataDetailWeatherCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1B90926E9FD8100B5B314 /* DataDetailWeatherCD+CoreDataProperties.swift */; };
 		11B2A9AB26F1814000E14BA6 /* SearchCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2A9AA26F1814000E14BA6 /* SearchCountryViewController.swift */; };
-		11B2A9AE26F1820500E14BA6 /* DetailCountryCovidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2A9AD26F1820500E14BA6 /* DetailCountryCovidViewController.swift */; };
+		11B2A9AE26F1820500E14BA6 /* DetailCovidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2A9AD26F1820500E14BA6 /* DetailCovidViewController.swift */; };
 		11B2A9B326F1A61200E14BA6 /* SearchCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2A9B126F1A61200E14BA6 /* SearchCountryTableViewCell.swift */; };
 		11B2A9B426F1A61200E14BA6 /* SearchCountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B2A9B226F1A61200E14BA6 /* SearchCountryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		110AED0426F2F61400271ACD /* DetailCovidTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCovidTableViewCell.swift; sourceTree = "<group>"; };
+		110AED0526F2F61400271ACD /* DetailCovidTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCovidTableViewCell.xib; sourceTree = "<group>"; };
+		110AED0A26F2FC6600271ACD /* ChooseDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDateViewController.swift; sourceTree = "<group>"; };
 		1125654626DC694B008696AD /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 		1125654926DC698D008696AD /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		1125654F26DC6D85008696AD /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
@@ -149,7 +155,7 @@
 		11B1B90826E9FD8100B5B314 /* DataDetailWeatherCD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataDetailWeatherCD+CoreDataClass.swift"; sourceTree = "<group>"; };
 		11B1B90926E9FD8100B5B314 /* DataDetailWeatherCD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataDetailWeatherCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		11B2A9AA26F1814000E14BA6 /* SearchCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCountryViewController.swift; sourceTree = "<group>"; };
-		11B2A9AD26F1820500E14BA6 /* DetailCountryCovidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCountryCovidViewController.swift; sourceTree = "<group>"; };
+		11B2A9AD26F1820500E14BA6 /* DetailCovidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCovidViewController.swift; sourceTree = "<group>"; };
 		11B2A9B126F1A61200E14BA6 /* SearchCountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCountryTableViewCell.swift; sourceTree = "<group>"; };
 		11B2A9B226F1A61200E14BA6 /* SearchCountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCountryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,63 +196,45 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		1125653A26DC66CE008696AD /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1191AE3726EF2609001AD855 /* Save */,
-				1125654226DC6750008696AD /* Covid19 */,
-				1125653F26DC6736008696AD /* Weather Forecast */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		1125653B26DC66D6008696AD /* Controller */ = {
+		1125653B26DC66D6008696AD /* Screen */ = {
 			isa = PBXGroup;
 			children = (
 				1125653E26DC6706008696AD /* Save */,
-				1125653D26DC66FC008696AD /* Covid 19 */,
-				1125653C26DC66E2008696AD /* Weather Forecast */,
+				1125653D26DC66FC008696AD /* Covid19 */,
+				1125653C26DC66E2008696AD /* WeatherForecast */,
 			);
-			path = Controller;
+			path = Screen;
 			sourceTree = "<group>";
 		};
-		1125653C26DC66E2008696AD /* Weather Forecast */ = {
+		1125653C26DC66E2008696AD /* WeatherForecast */ = {
 			isa = PBXGroup;
 			children = (
-				1125654926DC698D008696AD /* WeatherViewController.swift */,
-				115AF5BA26DF3346007B3AF3 /* SettingTempViewController.swift */,
-				115AF5BD26DF3364007B3AF3 /* SearchCityViewController.swift */,
-				115AF5C026DF344E007B3AF3 /* DetailWeatherViewController.swift */,
+				11DF074526F836A7001C4F94 /* DetailWeather */,
+				11DF074326F83675001C4F94 /* SettingTemp */,
+				11DF074126F8363D001C4F94 /* Weather */,
+				11DF073326F8304F001C4F94 /* SearchCity */,
 			);
-			path = "Weather Forecast";
+			path = WeatherForecast;
 			sourceTree = "<group>";
 		};
-		1125653D26DC66FC008696AD /* Covid 19 */ = {
+		1125653D26DC66FC008696AD /* Covid19 */ = {
 			isa = PBXGroup;
 			children = (
-				114D854A26D8D5C400BAA29F /* Covid19ViewController.swift */,
-				11B2A9AA26F1814000E14BA6 /* SearchCountryViewController.swift */,
-				11B2A9AD26F1820500E14BA6 /* DetailCountryCovidViewController.swift */,
+				11DF074026F835EE001C4F94 /* ChooseDate */,
+				11DF073A26F834CC001C4F94 /* DetailCovid */,
+				11DF073926F8349D001C4F94 /* Covid19 */,
+				11DF072E26F82F26001C4F94 /* SearchCountry */,
 			);
-			path = "Covid 19";
+			path = Covid19;
 			sourceTree = "<group>";
 		};
 		1125653E26DC6706008696AD /* Save */ = {
 			isa = PBXGroup;
 			children = (
+				11DF073D26F83544001C4F94 /* SaveWeatherCell */,
 				1125654626DC694B008696AD /* SaveViewController.swift */,
 			);
 			path = Save;
-			sourceTree = "<group>";
-		};
-		1125653F26DC6736008696AD /* Weather Forecast */ = {
-			isa = PBXGroup;
-			children = (
-				11B1B8D926E9A7CD00B5B314 /* DetailWeather */,
-				11B1B89526E89FFF00B5B314 /* SettingTemp */,
-				115AF5B126DF1B73007B3AF3 /* SevenDaysWeatherTableViewCell.swift */,
-			);
-			path = "Weather Forecast";
 			sourceTree = "<group>";
 		};
 		1125654026DC6746008696AD /* Weather Forecast */ = {
@@ -267,14 +255,6 @@
 				1125656426DC7FD1008696AD /* WeatherAPIService.swift */,
 			);
 			path = "Weather Forecast";
-			sourceTree = "<group>";
-		};
-		1125654226DC6750008696AD /* Covid19 */ = {
-			isa = PBXGroup;
-			children = (
-				11B2A9B026F1A5FC00E14BA6 /* SearchCountry */,
-			);
-			path = Covid19;
 			sourceTree = "<group>";
 		};
 		1125654326DC6757008696AD /* Covid 19 */ = {
@@ -403,8 +383,7 @@
 			children = (
 				11B1B88F26E8571900B5B314 /* Utils */,
 				115AF5B626DF28F5007B3AF3 /* Extension */,
-				1125653B26DC66D6008696AD /* Controller */,
-				1125653A26DC66CE008696AD /* View */,
+				1125653B26DC66D6008696AD /* Screen */,
 				1125653926DC66C3008696AD /* Model */,
 				1125653826DC669B008696AD /* NetWork */,
 				114D854626D8D5C400BAA29F /* AppDelegate.swift */,
@@ -455,15 +434,6 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		1191AE3726EF2609001AD855 /* Save */ = {
-			isa = PBXGroup;
-			children = (
-				1191AE3826EF264D001AD855 /* SaveWeatherTableViewCell.swift */,
-				1191AE3926EF264D001AD855 /* SaveWeatherTableViewCell.xib */,
-			);
-			path = Save;
-			sourceTree = "<group>";
-		};
 		1191AE3D26EF4592001AD855 /* Save */ = {
 			isa = PBXGroup;
 			children = (
@@ -480,31 +450,126 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		11B1B89526E89FFF00B5B314 /* SettingTemp */ = {
+		11DF072E26F82F26001C4F94 /* SearchCountry */ = {
 			isa = PBXGroup;
 			children = (
-				11B1B89626E8A02200B5B314 /* SettingTempTableViewCell.swift */,
-				11B1B89726E8A02200B5B314 /* SettingTempTableViewCell.xib */,
+				11DF072F26F82F60001C4F94 /* SeachCountryCell */,
+				11B2A9AA26F1814000E14BA6 /* SearchCountryViewController.swift */,
 			);
-			path = SettingTemp;
+			path = SearchCountry;
 			sourceTree = "<group>";
 		};
-		11B1B8D926E9A7CD00B5B314 /* DetailWeather */ = {
-			isa = PBXGroup;
-			children = (
-				11B1B8DA26E9A80100B5B314 /* DetailWeatherTableViewCell.swift */,
-				11B1B8DB26E9A80100B5B314 /* DetailWeatherTableViewCell.xib */,
-			);
-			path = DetailWeather;
-			sourceTree = "<group>";
-		};
-		11B2A9B026F1A5FC00E14BA6 /* SearchCountry */ = {
+		11DF072F26F82F60001C4F94 /* SeachCountryCell */ = {
 			isa = PBXGroup;
 			children = (
 				11B2A9B126F1A61200E14BA6 /* SearchCountryTableViewCell.swift */,
 				11B2A9B226F1A61200E14BA6 /* SearchCountryTableViewCell.xib */,
 			);
-			path = SearchCountry;
+			path = SeachCountryCell;
+			sourceTree = "<group>";
+		};
+		11DF073326F8304F001C4F94 /* SearchCity */ = {
+			isa = PBXGroup;
+			children = (
+				115AF5BD26DF3364007B3AF3 /* SearchCityViewController.swift */,
+			);
+			path = SearchCity;
+			sourceTree = "<group>";
+		};
+		11DF073926F8349D001C4F94 /* Covid19 */ = {
+			isa = PBXGroup;
+			children = (
+				114D854A26D8D5C400BAA29F /* Covid19ViewController.swift */,
+			);
+			path = Covid19;
+			sourceTree = "<group>";
+		};
+		11DF073A26F834CC001C4F94 /* DetailCovid */ = {
+			isa = PBXGroup;
+			children = (
+				11DF073B26F834DC001C4F94 /* DetailCovidCell */,
+				11B2A9AD26F1820500E14BA6 /* DetailCovidViewController.swift */,
+			);
+			path = DetailCovid;
+			sourceTree = "<group>";
+		};
+		11DF073B26F834DC001C4F94 /* DetailCovidCell */ = {
+			isa = PBXGroup;
+			children = (
+				110AED0426F2F61400271ACD /* DetailCovidTableViewCell.swift */,
+				110AED0526F2F61400271ACD /* DetailCovidTableViewCell.xib */,
+			);
+			path = DetailCovidCell;
+			sourceTree = "<group>";
+		};
+		11DF073D26F83544001C4F94 /* SaveWeatherCell */ = {
+			isa = PBXGroup;
+			children = (
+				1191AE3826EF264D001AD855 /* SaveWeatherTableViewCell.swift */,
+				1191AE3926EF264D001AD855 /* SaveWeatherTableViewCell.xib */,
+			);
+			path = SaveWeatherCell;
+			sourceTree = "<group>";
+		};
+		11DF074026F835EE001C4F94 /* ChooseDate */ = {
+			isa = PBXGroup;
+			children = (
+				110AED0A26F2FC6600271ACD /* ChooseDateViewController.swift */,
+			);
+			path = ChooseDate;
+			sourceTree = "<group>";
+		};
+		11DF074126F8363D001C4F94 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				1125654926DC698D008696AD /* WeatherViewController.swift */,
+				11DF074226F83646001C4F94 /* WeatherCell */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		11DF074226F83646001C4F94 /* WeatherCell */ = {
+			isa = PBXGroup;
+			children = (
+				115AF5B126DF1B73007B3AF3 /* SevenDaysWeatherTableViewCell.swift */,
+			);
+			path = WeatherCell;
+			sourceTree = "<group>";
+		};
+		11DF074326F83675001C4F94 /* SettingTemp */ = {
+			isa = PBXGroup;
+			children = (
+				11DF074426F8368B001C4F94 /* SettingTempCell */,
+				115AF5BA26DF3346007B3AF3 /* SettingTempViewController.swift */,
+			);
+			path = SettingTemp;
+			sourceTree = "<group>";
+		};
+		11DF074426F8368B001C4F94 /* SettingTempCell */ = {
+			isa = PBXGroup;
+			children = (
+				11B1B89626E8A02200B5B314 /* SettingTempTableViewCell.swift */,
+				11B1B89726E8A02200B5B314 /* SettingTempTableViewCell.xib */,
+			);
+			path = SettingTempCell;
+			sourceTree = "<group>";
+		};
+		11DF074526F836A7001C4F94 /* DetailWeather */ = {
+			isa = PBXGroup;
+			children = (
+				115AF5C026DF344E007B3AF3 /* DetailWeatherViewController.swift */,
+				11DF074626F836BA001C4F94 /* DetailWeatherCell */,
+			);
+			path = DetailWeather;
+			sourceTree = "<group>";
+		};
+		11DF074626F836BA001C4F94 /* DetailWeatherCell */ = {
+			isa = PBXGroup;
+			children = (
+				11B1B8DA26E9A80100B5B314 /* DetailWeatherTableViewCell.swift */,
+				11B1B8DB26E9A80100B5B314 /* DetailWeatherTableViewCell.xib */,
+			);
+			path = DetailWeatherCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -566,6 +631,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11B2A9B426F1A61200E14BA6 /* SearchCountryTableViewCell.xib in Resources */,
+				110AED0726F2F61400271ACD /* DetailCovidTableViewCell.xib in Resources */,
 				112565B826DCDD13008696AD /* Key.csv in Resources */,
 				114D855626D8D5C700BAA29F /* LaunchScreen.storyboard in Resources */,
 				11B1B89926E8A02200B5B314 /* SettingTempTableViewCell.xib in Resources */,
@@ -626,10 +692,12 @@
 				114D854926D8D5C400BAA29F /* SceneDelegate.swift in Sources */,
 				1191AE4626F085ED001AD855 /* Extension+Int.swift in Sources */,
 				1191AE4C26F08E7E001AD855 /* UIViewCustom.swift in Sources */,
+				110AED0B26F2FC6600271ACD /* ChooseDateViewController.swift in Sources */,
 				1125658526DC8589008696AD /* ErrorNetwork.swift in Sources */,
+				110AED0626F2F61400271ACD /* DetailCovidTableViewCell.swift in Sources */,
 				1125656526DC7FD1008696AD /* WeatherAPIService.swift in Sources */,
 				1191AE3A26EF264D001AD855 /* SaveWeatherTableViewCell.swift in Sources */,
-				11B2A9AE26F1820500E14BA6 /* DetailCountryCovidViewController.swift in Sources */,
+				11B2A9AE26F1820500E14BA6 /* DetailCovidViewController.swift in Sources */,
 				1125658926DC8915008696AD /* SevenDaysWeather.swift in Sources */,
 				1125658C26DC8A50008696AD /* Data7DaysWeather.swift in Sources */,
 				115AF5B826DF291E007B3AF3 /* Extension+UiImageView.swift in Sources */,

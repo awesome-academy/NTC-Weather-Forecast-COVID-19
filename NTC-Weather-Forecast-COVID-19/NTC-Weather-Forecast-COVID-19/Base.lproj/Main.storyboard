@@ -899,9 +899,75 @@
                     <view key="view" contentMode="scaleToFill" id="bFf-nU-I8C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="KwG-bK-b7l">
+                                <rect key="frame" x="0.0" y="64" width="414" height="505"/>
+                                <connections>
+                                    <action selector="onChooseDatePicker:" destination="Brb-HK-QdR" eventType="valueChanged" id="H33-nQ-vgi"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RME-uN-aJl">
+                                <rect key="frame" x="10" y="20" width="394" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="fV0-DK-cg0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="5qD-qQ-mjv">
+                                <rect key="frame" x="82" y="579" width="250" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWQ-3B-Q3z" customClass="CustomButton" customModule="NTC_Weather_Forecast_COVID_19" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
+                                        <color key="backgroundColor" red="0.99345653550000002" green="0.91451445399999998" blue="0.65251038220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="7oa-RI-Tkb"/>
+                                            <constraint firstAttribute="width" constant="100" id="U8Q-Yl-fDp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" systemColor="systemPurpleColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickOkButton:" destination="Brb-HK-QdR" eventType="touchUpInside" id="Mk0-Un-RUy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzR-Ql-C2p" customClass="CustomButton" customModule="NTC_Weather_Forecast_COVID_19" customModuleProvider="target">
+                                        <rect key="frame" x="150" y="0.0" width="100" height="45"/>
+                                        <color key="backgroundColor" red="0.99345653550000002" green="0.91451445399999998" blue="0.65251038220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="0Sq-Ge-WF1"/>
+                                            <constraint firstAttribute="width" constant="100" id="xNw-S5-gs2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" systemColor="systemPurpleColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickCancelButton:" destination="Brb-HK-QdR" eventType="touchUpInside" id="GhF-BB-ozj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="O7f-cY-bOm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RME-uN-aJl" firstAttribute="top" secondItem="O7f-cY-bOm" secondAttribute="top" constant="20" id="7v7-pH-stU"/>
+                            <constraint firstItem="KwG-bK-b7l" firstAttribute="top" secondItem="RME-uN-aJl" secondAttribute="bottom" constant="20" id="EL6-Fk-apr"/>
+                            <constraint firstItem="5qD-qQ-mjv" firstAttribute="centerX" secondItem="KwG-bK-b7l" secondAttribute="centerX" id="Fhs-qr-n0A"/>
+                            <constraint firstItem="O7f-cY-bOm" firstAttribute="trailing" secondItem="RME-uN-aJl" secondAttribute="trailing" constant="10" id="LcG-i2-KjO"/>
+                            <constraint firstItem="5qD-qQ-mjv" firstAttribute="top" secondItem="KwG-bK-b7l" secondAttribute="bottom" constant="10" id="OBr-f8-l3P"/>
+                            <constraint firstItem="KwG-bK-b7l" firstAttribute="leading" secondItem="O7f-cY-bOm" secondAttribute="leading" id="QvE-KR-GIg"/>
+                            <constraint firstItem="KwG-bK-b7l" firstAttribute="height" secondItem="bFf-nU-I8C" secondAttribute="height" multiplier="0.6" id="WGb-p9-Rrr"/>
+                            <constraint firstItem="RME-uN-aJl" firstAttribute="leading" secondItem="O7f-cY-bOm" secondAttribute="leading" constant="10" id="Y32-Z4-UwS"/>
+                            <constraint firstItem="O7f-cY-bOm" firstAttribute="trailing" secondItem="KwG-bK-b7l" secondAttribute="trailing" id="q5m-lI-LTA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="chooseDatePicker" destination="KwG-bK-b7l" id="cFd-Xd-Zu5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AbK-Ex-UhW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1047,6 +1113,9 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

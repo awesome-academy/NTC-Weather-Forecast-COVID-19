@@ -80,6 +80,8 @@
 		11B2A9AE26F1820500E14BA6 /* DetailCovidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2A9AD26F1820500E14BA6 /* DetailCovidViewController.swift */; };
 		11B2A9B326F1A61200E14BA6 /* SearchCountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2A9B126F1A61200E14BA6 /* SearchCountryTableViewCell.swift */; };
 		11B2A9B426F1A61200E14BA6 /* SearchCountryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B2A9B226F1A61200E14BA6 /* SearchCountryTableViewCell.xib */; };
+		11EA9C1926F96B9D00006431 /* UIButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA9C1826F96B9D00006431 /* UIButtonCustom.swift */; };
+		11EA9C1C26F97CAB00006431 /* Extension+UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA9C1B26F97CAB00006431 /* Extension+UIDatePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -158,6 +160,8 @@
 		11B2A9AD26F1820500E14BA6 /* DetailCovidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCovidViewController.swift; sourceTree = "<group>"; };
 		11B2A9B126F1A61200E14BA6 /* SearchCountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCountryTableViewCell.swift; sourceTree = "<group>"; };
 		11B2A9B226F1A61200E14BA6 /* SearchCountryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCountryTableViewCell.xib; sourceTree = "<group>"; };
+		11EA9C1826F96B9D00006431 /* UIButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonCustom.swift; sourceTree = "<group>"; };
+		11EA9C1B26F97CAB00006431 /* Extension+UIDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIDatePicker.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,7 @@
 				1125659726DC9076008696AD /* City World */,
 				117AA8FB26E4D70200CD9DD8 /* ReusableView.swift */,
 				1191AE4B26F08E7E001AD855 /* UIViewCustom.swift */,
+				11EA9C1826F96B9D00006431 /* UIButtonCustom.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -430,6 +435,7 @@
 				11B1B8D526E99C8C00B5B314 /* Extension+UILabel.swift */,
 				1191AE4526F085ED001AD855 /* Extension+Int.swift */,
 				1191AE4826F08731001AD855 /* Extension+String.swift */,
+				11EA9C1B26F97CAB00006431 /* Extension+UIDatePicker.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -674,6 +680,7 @@
 				114D854B26D8D5C400BAA29F /* Covid19ViewController.swift in Sources */,
 				11B1B8DC26E9A80100B5B314 /* DetailWeatherTableViewCell.swift in Sources */,
 				1125656226DC7FB9008696AD /* WeatherNetWork.swift in Sources */,
+				11EA9C1926F96B9D00006431 /* UIButtonCustom.swift in Sources */,
 				1125656B26DC7FFA008696AD /* Covid19Network.swift in Sources */,
 				1191AE4926F08731001AD855 /* Extension+String.swift in Sources */,
 				114D855126D8D5C400BAA29F /* NTC_Weather_Forecast_COVID_19.xcdatamodeld in Sources */,
@@ -731,6 +738,7 @@
 				115AF59626DDE78C007B3AF3 /* Covid19APIService+getListCountry.swift in Sources */,
 				1125657126DC801F008696AD /* Covid19APIService.swift in Sources */,
 				112565A926DC92B5008696AD /* CountryCovid.swift in Sources */,
+				11EA9C1C26F97CAB00006431 /* Extension+UIDatePicker.swift in Sources */,
 				11B1B90226E9F62700B5B314 /* WeatherManager.swift in Sources */,
 				115AF5BB26DF3346007B3AF3 /* SettingTempViewController.swift in Sources */,
 			);

@@ -15,4 +15,18 @@ extension DateFormatter {
         let date = NSDate(timeIntervalSince1970: timeInterval)
         return dateFormatCoordinate.string(from: date as Date)
     }
+    
+    func convertStringToDate(string: String) -> Date {
+        let dateFormat = DateFormatter()
+        dateFormat.dateFormat = "yyyy-MM-dd"
+        let date = dateFormat.date(from: string) ?? Date()
+        return date
+    }
+    
+    func covertDateToString(date: Date) -> String {
+        let datefomat = DateFormatter()
+        datefomat.dateFormat = "yyyy-MM-dd"
+        let string = datefomat.string(from: date)
+        return string
+    }
 }

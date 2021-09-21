@@ -14,6 +14,7 @@ final class DetailCovidViewController: UIViewController {
     
     var country = Country()
     var countryCovids = [CountryCovid]()
+    private var countryCovidNoChange = [CountryCovid]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,10 +27,19 @@ final class DetailCovidViewController: UIViewController {
         detailCountryCovidTableView.register(DetailCovidTableViewCell.nib,
                                              forCellReuseIdentifier: DetailCovidTableViewCell.reuseIdentifier)
         detailCountryCovidNavigationItem.title = country.name
+        countryCovidNoChange = countryCovids
     }
     
-    @IBAction func actionFitlerDetailCountryCovid(_ sender: UIBarButtonItem) {
+    @IBAction
+    private func actionFitlerDetailCountryCovid(_ sender: UIBarButtonItem) {
         self.performSegue(withIdentifier: "ChooseDateViewController", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let controller = segue.destination as? ChooseDateViewController {
+            controller.delegate = self
+            controller.countryCovids = self.countryCovidNoChange
+        }
     }
 }
 
@@ -46,5 +56,13 @@ extension DetailCovidViewController: UITableViewDataSource, UITableViewDelegate 
             return cell
         }
         return UITableViewCell()
+    }
+}
+
+extension DetailCovidViewController: ChooseDateDelegate {
+    func sendDate(date: Date) {
+        countryCovids.removeAll()
+        countryCovids = countryCovidNoChange.filter { $0.date.subStringTime() == DateFormatter().covertDateToString(date: date) }
+        detailCountryCovidTableView.reloadData()
     }
 }

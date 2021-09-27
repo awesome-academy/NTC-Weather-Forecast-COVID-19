@@ -74,7 +74,7 @@ extension DetailWeatherViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1)
         UIView.animate(withDuration: 0.5, animations: {
-            cell.layer.transform = CATransform3DMakeScale(1.05, 1.05, 1)
+            cell.layer.transform = CATransform3DMakeScale(1, 1, 1)
             }, completion: { _ in
                 UIView.animate(withDuration: 0.2, animations: {
                     cell.layer.transform = CATransform3DMakeScale(1, 1, 1)

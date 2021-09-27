@@ -66,6 +66,9 @@
 		1191AE4626F085ED001AD855 /* Extension+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1191AE4526F085ED001AD855 /* Extension+Int.swift */; };
 		1191AE4926F08731001AD855 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1191AE4826F08731001AD855 /* Extension+String.swift */; };
 		1191AE4C26F08E7E001AD855 /* UIViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1191AE4B26F08E7E001AD855 /* UIViewCustom.swift */; };
+		1198238726FB1E8100EE557D /* CovidViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1198238626FB1E8100EE557D /* CovidViewControllerTest.swift */; };
+		1198238B26FB318F00EE557D /* WeatherViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1198238A26FB318F00EE557D /* WeatherViewControllerTest.swift */; };
+		1198238F26FB334000EE557D /* SearchCountryViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1198238E26FB334000EE557D /* SearchCountryViewControllerTest.swift */; };
 		11B1B89826E8A02200B5B314 /* SettingTempTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1B89626E8A02200B5B314 /* SettingTempTableViewCell.swift */; };
 		11B1B89926E8A02200B5B314 /* SettingTempTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B1B89726E8A02200B5B314 /* SettingTempTableViewCell.xib */; };
 		11B1B8D626E99C8C00B5B314 /* Extension+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1B8D526E99C8C00B5B314 /* Extension+UILabel.swift */; };
@@ -83,6 +86,16 @@
 		11EA9C1926F96B9D00006431 /* UIButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA9C1826F96B9D00006431 /* UIButtonCustom.swift */; };
 		11EA9C1C26F97CAB00006431 /* Extension+UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EA9C1B26F97CAB00006431 /* Extension+UIDatePicker.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1198237F26FB1DEE00EE557D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 114D853B26D8D5C400BAA29F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 114D854226D8D5C400BAA29F;
+			remoteInfo = "NTC-Weather-Forecast-COVID-19";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		110AED0426F2F61400271ACD /* DetailCovidTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCovidTableViewCell.swift; sourceTree = "<group>"; };
@@ -146,6 +159,11 @@
 		1191AE4526F085ED001AD855 /* Extension+Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Int.swift"; sourceTree = "<group>"; };
 		1191AE4826F08731001AD855 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		1191AE4B26F08E7E001AD855 /* UIViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewCustom.swift; sourceTree = "<group>"; };
+		1198237A26FB1DEE00EE557D /* NTC-Weather-Forecast-COVID-19Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NTC-Weather-Forecast-COVID-19Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1198237E26FB1DEE00EE557D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1198238626FB1E8100EE557D /* CovidViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidViewControllerTest.swift; sourceTree = "<group>"; };
+		1198238A26FB318F00EE557D /* WeatherViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewControllerTest.swift; sourceTree = "<group>"; };
+		1198238E26FB334000EE557D /* SearchCountryViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCountryViewControllerTest.swift; sourceTree = "<group>"; };
 		11B1B89626E8A02200B5B314 /* SettingTempTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTempTableViewCell.swift; sourceTree = "<group>"; };
 		11B1B89726E8A02200B5B314 /* SettingTempTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTempTableViewCell.xib; sourceTree = "<group>"; };
 		11B1B8D526E99C8C00B5B314 /* Extension+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UILabel.swift"; sourceTree = "<group>"; };
@@ -166,6 +184,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		114D854026D8D5C400BAA29F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1198237726FB1DEE00EE557D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				114D854526D8D5C400BAA29F /* NTC-Weather-Forecast-COVID-19 */,
+				1198237B26FB1DEE00EE557D /* NTC-Weather-Forecast-COVID-19Tests */,
 				114D854426D8D5C400BAA29F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -379,6 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				114D854326D8D5C400BAA29F /* NTC-Weather-Forecast-COVID-19.app */,
+				1198237A26FB1DEE00EE557D /* NTC-Weather-Forecast-COVID-19Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -446,6 +473,17 @@
 				1191AE3E26EF45A4001AD855 /* NotificationLocal.swift */,
 			);
 			path = Save;
+			sourceTree = "<group>";
+		};
+		1198237B26FB1DEE00EE557D /* NTC-Weather-Forecast-COVID-19Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1198237E26FB1DEE00EE557D /* Info.plist */,
+				1198238626FB1E8100EE557D /* CovidViewControllerTest.swift */,
+				1198238A26FB318F00EE557D /* WeatherViewControllerTest.swift */,
+				1198238E26FB334000EE557D /* SearchCountryViewControllerTest.swift */,
+			);
+			path = "NTC-Weather-Forecast-COVID-19Tests";
 			sourceTree = "<group>";
 		};
 		11B1B88F26E8571900B5B314 /* Utils */ = {
@@ -599,6 +637,24 @@
 			productReference = 114D854326D8D5C400BAA29F /* NTC-Weather-Forecast-COVID-19.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1198237926FB1DEE00EE557D /* NTC-Weather-Forecast-COVID-19Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1198238326FB1DEE00EE557D /* Build configuration list for PBXNativeTarget "NTC-Weather-Forecast-COVID-19Tests" */;
+			buildPhases = (
+				1198237626FB1DEE00EE557D /* Sources */,
+				1198237726FB1DEE00EE557D /* Frameworks */,
+				1198237826FB1DEE00EE557D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1198238026FB1DEE00EE557D /* PBXTargetDependency */,
+			);
+			name = "NTC-Weather-Forecast-COVID-19Tests";
+			productName = "NTC-Weather-Forecast-COVID-19Tests";
+			productReference = 1198237A26FB1DEE00EE557D /* NTC-Weather-Forecast-COVID-19Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -610,6 +666,10 @@
 				TargetAttributes = {
 					114D854226D8D5C400BAA29F = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					1198237926FB1DEE00EE557D = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 114D854226D8D5C400BAA29F;
 					};
 				};
 			};
@@ -627,6 +687,7 @@
 			projectRoot = "";
 			targets = (
 				114D854226D8D5C400BAA29F /* NTC-Weather-Forecast-COVID-19 */,
+				1198237926FB1DEE00EE557D /* NTC-Weather-Forecast-COVID-19Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -646,6 +707,13 @@
 				112565A026DC9169008696AD /* city.csv in Resources */,
 				11B1B8DD26E9A80100B5B314 /* DetailWeatherTableViewCell.xib in Resources */,
 				1191AE3B26EF264D001AD855 /* SaveWeatherTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1198237826FB1DEE00EE557D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,7 +812,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1198237626FB1DEE00EE557D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1198238B26FB318F00EE557D /* WeatherViewControllerTest.swift in Sources */,
+				1198238F26FB334000EE557D /* SearchCountryViewControllerTest.swift in Sources */,
+				1198238726FB1E8100EE557D /* CovidViewControllerTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1198238026FB1DEE00EE557D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 114D854226D8D5C400BAA29F /* NTC-Weather-Forecast-COVID-19 */;
+			targetProxy = 1198237F26FB1DEE00EE557D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		114D854C26D8D5C400BAA29F /* Main.storyboard */ = {
@@ -918,6 +1004,44 @@
 			};
 			name = Release;
 		};
+		1198238126FB1DEE00EE557D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "NTC-Weather-Forecast-COVID-19Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "j.NTC-Weather-Forecast-COVID-19Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NTC-Weather-Forecast-COVID-19.app/NTC-Weather-Forecast-COVID-19";
+			};
+			name = Debug;
+		};
+		1198238226FB1DEE00EE557D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "NTC-Weather-Forecast-COVID-19Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "j.NTC-Weather-Forecast-COVID-19Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NTC-Weather-Forecast-COVID-19.app/NTC-Weather-Forecast-COVID-19";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -935,6 +1059,15 @@
 			buildConfigurations = (
 				114D855B26D8D5C700BAA29F /* Debug */,
 				114D855C26D8D5C700BAA29F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1198238326FB1DEE00EE557D /* Build configuration list for PBXNativeTarget "NTC-Weather-Forecast-COVID-19Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1198238126FB1DEE00EE557D /* Debug */,
+				1198238226FB1DEE00EE557D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
